@@ -1,4 +1,3 @@
-import datetime
 import json
 import os
 import pandas as pd
@@ -9,7 +8,7 @@ folder = os.path.join(root,'projects','weatherdata')
 key_path = os.path.join(folder, 'key.txt')
 
 
-date = datetime.datetime.now().strftime('%Y-%m-%d')
+date = pd.datetime.now().strftime('%Y-%m-%d')
 file_name = date + '_allsites.json'
 file_path = os.path.join(folder,'json_files',file_name)
 
